@@ -1,5 +1,6 @@
-import { test, expect } from "vitest";
+import { mount } from "@vue/test-utils";
+import App from "../App.vue";
 
-test('case', () => {
-    expect(true).true;
+test("render app", () => {
+    const wrapper = mount(App);
 })
