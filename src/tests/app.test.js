@@ -2,5 +2,10 @@ import { mount } from "@vue/test-utils";
 import App from "../App.vue";
 
 test("render app", () => {
-    const wrapper = mount(App, {shallow: true});
+    const spy = vi.spyOn(console, 'log');
+
+    mount(App, {shallow: true});
+
+    expect(spy).toHaveBeenCalledOnce();
+    expect(spy).toHaveBeenLastCalledWith('👋 This message is being logged by "App.vue", included via Vite');
 })
