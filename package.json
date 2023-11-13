@@ -26,7 +26,8 @@
     "@electron-forge/plugin-auto-unpack-natives": "^6.4.2",
     "@electron-forge/plugin-vite": "^6.4.2",
     "@vitejs/plugin-vue": "^4.4.1",
-    "electron": "27.0.4"
+    "electron": "27.0.4",
+    "vitest": "^0.34.6"
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",
