@@ -9,7 +9,9 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\""
+    "lint": "echo \"No linting configured\"",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "keywords": [],
   "author": {
@@ -26,11 +28,15 @@
     "@electron-forge/plugin-auto-unpack-natives": "^6.4.2",
     "@electron-forge/plugin-vite": "^6.4.2",
     "@vitejs/plugin-vue": "^4.4.1",
-    "electron": "27.0.4"
+    "@vitest/coverage-v8": "^0.34.6",
+    "@vue/test-utils": "^2.4.1",
+    "electron": "27.0.4",
+    "vitest": "^0.34.6"
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",
     "element-plus": "^2.4.2",
+    "jsdom": "^22.1.0",
     "vue": "^3.3.8"
   }
 }
