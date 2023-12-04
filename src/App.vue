@@ -1,5 +1,5 @@
 <template>
-    <View/>
+    <View />
 </template>
 
 <script setup>
