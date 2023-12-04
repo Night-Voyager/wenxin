@@ -13,7 +13,7 @@
 
 <script>
 export default {
-    name: "View"
+    name: "TheView"
 };
 </script>
 
