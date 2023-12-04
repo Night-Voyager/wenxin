@@ -31,4 +31,4 @@ module.exports = {
     'semi': 'warn',
     'vue/html-indent': 'off'
   }
-}
+};
