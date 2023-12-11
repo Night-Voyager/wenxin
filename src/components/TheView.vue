@@ -2,10 +2,10 @@
     <el-card>
         <el-row>
             <el-col :span="12">
-                <el-skeleton/>
+                <el-skeleton />
             </el-col>
             <el-col :span="12">
-                <el-skeleton/>
+                <el-skeleton />
             </el-col>
         </el-row>
     </el-card>
@@ -13,8 +13,8 @@
 
 <script>
 export default {
-    name: "View"
-}
+    name: "TheView"
+};
 </script>
 
 <style scoped>

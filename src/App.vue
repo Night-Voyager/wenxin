@@ -1,9 +1,9 @@
 <template>
-    <View/>
+    <TheView />
 </template>
 
 <script setup>
-import View from "./components/View.vue";
+import TheView from "./components/TheView.vue";
 
 console.log('👋 This message is being logged by "App.vue", included via Vite');
 </script>

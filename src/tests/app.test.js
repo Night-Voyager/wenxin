@@ -8,4 +8,4 @@ test("render app", () => {
 
     expect(spy).toHaveBeenCalledOnce();
     expect(spy).toHaveBeenLastCalledWith('👋 This message is being logged by "App.vue", included via Vite');
-})
+});
