@@ -3,8 +3,11 @@
         <el-row>
             <el-col :span="12">
                 <el-upload
-                    drag
+                    ref="uploadRef"
+                    :limit="1"
+                    :on-exceed="handleExceed"
                     :auto-upload="false"
+                    drag
                 >
                     <el-icon class="el-icon--upload">
                         <upload-filled />
@@ -22,8 +25,19 @@
     </el-card>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import {UploadFilled} from "@element-plus/icons-vue";
+import {ref} from "vue";
+import {genFileId, UploadInstance, UploadProps, UploadRawFile} from "element-plus";
+
+const uploadRef = ref<UploadInstance>();
+
+const handleExceed: UploadProps['onExceed'] = (files) => {
+    uploadRef.value!.clearFiles();
+    const file = files[0] as UploadRawFile;
+    file.uid = genFileId();
+    uploadRef.value!.handleStart(file);
+};
 </script>
 
 <style scoped>
