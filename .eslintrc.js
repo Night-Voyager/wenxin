@@ -5,7 +5,8 @@ module.exports = {
     node: true
   },
   extends: [
-    'plugin:vue/vue3-recommended'
+    'plugin:vue/vue3-recommended',
+    'plugin:@typescript-eslint/recommended'
   ],
   overrides: [
     {
@@ -20,13 +21,17 @@ module.exports = {
       }
     }
   ],
+  parser: 'vue-eslint-parser',
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module'
+    sourceType: 'module',
+    parser: '@typescript-eslint/parser'
   },
   plugins: [
-    'vue'
+    'vue',
+    '@typescript-eslint'
   ],
+  root: true,
   rules: {
     'semi': 'warn',
     'vue/html-indent': 'off'

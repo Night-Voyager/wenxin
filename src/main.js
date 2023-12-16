@@ -1,5 +1,5 @@
-const { app, BrowserWindow } = require('electron');
-const path = require('path');
+const { app, BrowserWindow } = require('electron');  // eslint-disable-line @typescript-eslint/no-var-requires
+const path = require('path');  // eslint-disable-line @typescript-eslint/no-var-requires
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) {
